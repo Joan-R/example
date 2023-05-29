@@ -33,10 +33,8 @@ int parsing(char *buffer, recup *data)
 
 int main(int ac, char **av)
 {
-    if (ac > 2)
+    if (ac > 1)
         return 84;
-    if (ac == 2)
-        return help(av[1]);
     char *buffer = NULL, return_val = 0;
     recup *data = malloc(sizeof(recup));
     data->Statut = 0;
